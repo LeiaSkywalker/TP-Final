@@ -58,7 +58,7 @@ footer div img{
 }
 
 .contact{
-    background-color: rgb(64, 0, 255);
+    background-color: yellow;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,7 +72,7 @@ footer div img{
 
 ul.navlink a{
     text-decoration: none;
-    color: white;
+    /*color: white;*/
     font-size: larger;
     font-weight: 300;
 }
@@ -252,4 +252,27 @@ section#sectionB {
     .iframe, .iframetitle{
         width: 1120px;
     }
+}
+
+/*Animaciones, transiciones y transformaciones*/
+
+.logo{
+    filter: grayscale(100%);
+}
+
+.logo:hover{
+    filter: grayscale(0%);
+    transform: scale(1.5);
+}
+
+.navlink li a{
+    text-decoration: none;
+    filter:invert(30%);
+    color: white;
+}
+
+.navlink li a:hover{
+    text-decoration: none;
+    filter: invert(0%);
+    color: yellow;
 }
