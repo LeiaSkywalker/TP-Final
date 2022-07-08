@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pelis y Series</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/pelilogo.png">
-</head>
-<body>
-
-
-    <div id="grillacontacto">
-        <header class="a-header b-header"> 
-            <div id="headerimage">
-                <img src="../images/pelilogo.png" class="logo">
-            </div>
-            <nav>
-                <ul class="navlink">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="pages/peliculas.html">PELÍCULAS</a></li>
-                    <li><a href="pages/series.html">SERIES</a></li>
-                    <li><a href="pages/staff.html">STAFF</a></li>
-                    <li><a href="pages/contacto.html">CONTACTO</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pelis y Series</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../images/pelilogo.png">
+    </head>
+<!-- Control K + Control C se escribe un comentario -->
+        <!--bootstrap-->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-black">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="../images/pelilogo.png" class="logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="peliculas.html">Películas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="series.html">Series</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="staff.html">Staff</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
         </header>
+        
+        <section id="sectionA" class="contact">
+            <h1>CONTACTO</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <!--bootstrap-->
+        <!-- formulario de contacto -->
+        <form class="row g-3 formcolor">
+            <div class="col-md-6">
+                <label for="inputName4" class="form-label">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre/s" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+                <label for="inputLastName4" class="form-label">Apellido</label>
+                <input type="text" class="form-control" placeholder="Apellido/s" aria-label="Last name">
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Dejá tu mensaje</label>
+            </div>
 
 
 
-	<section id="sectionA" class="contact">
-		<h1>CONTACTO</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-	<!-- formulario de contacto -->
-	<section id="sectionB" class="contact  contact2">
-        <article>
-			<Fieldset>
-                <form action="#">
-                <label for="Nombre">Nombre
-                    <input type="text" placeholder="Tu nombre"><br>
-				</label>
-                
-                <label for="email">Email
-					<input type="email" placeholder="Tu email de contacto" name="email"><br>
-				</label>
-                
-                <label for="Mensaje"> Mensaje <br>
-					<textarea placeholder="Ingresá el mensaje que quieras dejar"></textarea>
-				</label> <br>
-
-                <div><p><label for="AmanteDe">Amante de:</label>                    
-                <select name="talles" id="">                   
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-4">
+                <label for="AmanteDe" class="form-label">Amante de:</label>
+                <select id="inputState" class="form-select">                   
                     <option value="Pelis">Películas</option>
                     <option value="Series">Series</option>
                     <option value="Ambos">Ambos (Pelis y Series)</option>
                 <br>
                 </select>
-                </p></div>
-				
-                <div><p>Queres recibir info sobre nosotros?
-				<input type="checkbox" name="acepta" value="1"></p></div>
-				
-                <input type="Submit" value="Enviar">
-                <input type="reset" value="Resetear">
-                
-			</form>
-		</Fieldset>
-        </article>
-	</section>
-	<!-- cierre de form contacto -->
-    <aside>
+            </div>
+            <div>
+                <p>Queres recibir info sobre nosotros?
+                <input type="checkbox" name="acepta" value="1"></p>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="reset" class="btn btn-primary">Resetear</button>
+            </div>
 
-    </aside>
-    <footer>
-        <div>
-            <img src="../images/pelilogo.png" class="logo">
-        </div>
-        <h2 class="footertext">Logo 2022 - We love movies!</h2>
-    </footer>
-    </div>
-</body>
+
+          </form>
+
+
+
+        
+ 
+        </section>
+
+
+
+
+        <footer>
+            <div>
+                <img src="../images/pelilogo.png" class="logo">
+            </div>
+            <h2 class="footertext">2022 - We love movies!</h2>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+
 </html>

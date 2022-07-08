@@ -258,6 +258,7 @@ section#sectionB {
 
 .logo{
     filter: grayscale(100%);
+    width: 100px
 }
 
 .logo:hover{
@@ -274,5 +275,34 @@ section#sectionB {
 .navlink li a:hover{
     text-decoration: none;
     filter: invert(0%);
-    color: rgb(255, 0, 25);
+    color:yellow;
+}
+
+.nav-link{
+    text-decoration: none;
+    filter:invert(30%);
+    color: white;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    filter: invert(0%);
+    color:yellow;
+}
+
+.navbar-toggler{
+    background-color: white;
+    margin: 0px !important;
+}
+
+.navbar-toggler:hover{
+    background-color: yellow;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.formcolor{
+    background-color: yellow;
 }
